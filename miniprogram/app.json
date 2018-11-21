@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/message/message",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundColor": "#F4f4f8",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#217DDE",
+    "navigationBarTitleText": "乐车邦",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedColor": "#217DDE",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/activeHome.png",
+        "color": "#333"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "selectedColor": "#217DDE",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/ac-message.png",
+        "color": "#333"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "selectedColor": "#217DDE",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/ac-my.png",
+        "color": "#333"
+      }
+    ]
+  }
+}

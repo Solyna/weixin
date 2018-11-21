@@ -1,0 +1,49 @@
+<!--miniprogram/pages/message/message.wxml-->
+<view class='container'>
+  <view class='msg-nav'>
+    <view class='msg-nav-item'>
+      <view class='msg-icon'>
+        <i class="iconfont order msg-nav-icon"></i>
+      </view>
+
+      <text class='msg-nav-text'>业务提醒</text>
+    </view>
+
+    <view class='msg-nav-item'>
+      <view class='msg-icon'>
+        <i class="iconfont order msg-nav-icon"></i>
+      </view>
+      <text class='msg-nav-text'>任务通知</text>
+    </view>
+
+    <view class='msg-nav-item'>
+      <view class='msg-icon'>
+        <i class="iconfont order msg-nav-icon"></i>
+      </view>
+      <text class='msg-nav-text'>系统预警</text>
+    </view>
+  </view>
+
+  <view class='msg-list-container'>
+    <!-- <text style='margin-top:200rpx'>您暂时没有消息</text> -->
+
+    <!-- <view class='container'>
+      <view class='progress_box'>
+        <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
+        <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+        <view class="progress_text">
+          <text class='progress_info'> {{progress_txt}}</text>
+        </view>
+      </view>
+    </view> -->
+    <view class='list-container'>
+      <text class='list-title'>可用功能列表</text>
+
+      <view class='list-item' wx:for="{{useList}}" wx:key="id">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

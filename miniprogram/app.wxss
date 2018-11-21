@@ -1,0 +1,49 @@
+/**app.wxss**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'iconfont'; /* project id 837316 */
+  src: url('//at.alicdn.com/t/font_837316_4l35g06zzpr.eot');
+  src: url('//at.alicdn.com/t/font_837316_4l35g06zzpr.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_837316_4l35g06zzpr.woff') format('woff'),
+         url('//at.alicdn.com/t/font_837316_4l35g06zzpr.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_837316_4l35g06zzpr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dianpu::before {
+  content: "\e65b";
+}
+
+.shezhi::before {
+  content: "\e63e";
+}
+
+.order::before {
+  content: "\e63b";
+}
+
+.vip::before {
+  content: "\e677";
+}
+
+.daili::before {
+  content: "\e60c";
+}
+
+.time::before {
+  content: "\e63f";
+}
