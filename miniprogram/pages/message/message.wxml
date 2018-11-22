@@ -27,19 +27,10 @@
   <view class='msg-list-container'>
     <!-- <text style='margin-top:200rpx'>您暂时没有消息</text> -->
 
-    <!-- <view class='container'>
-      <view class='progress_box'>
-        <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
-        <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
-        <view class="progress_text">
-          <text class='progress_info'> {{progress_txt}}</text>
-        </view>
-      </view>
-    </view> -->
     <view class='list-container'>
       <text class='list-title'>可用功能列表</text>
 
-      <view class='list-item' wx:for="{{useList}}" wx:key="id">
+      <view class='list-item' wx:for="{{useList}}" wx:key="id" bindtap='onItemClick' data-url="{{item.url}}">
         <text>{{item.name}}</text>
       </view>
     </view>

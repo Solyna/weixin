@@ -7,10 +7,16 @@ Page({
   data: {
     useList: [{
       id: 1,
-      name: '选择图片'
+      name: '选择图片',
+      url: "../progress/progress"
     }, {
       id: 2,
-      name: '选择上传文件'
+      name: '选择上传文件',
+      url: "../progress/progress"
+    }, {
+      id: 3,
+      name: 'canvas绘制进度条',
+      url: "../progress/progress"
     }]
   },
 
@@ -25,8 +31,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    this.drawProgressbg();
-    this.drawCircle(0.5)
   },
 
   /**
@@ -71,35 +75,15 @@ Page({
 
   },
 
-  drawProgressbg: function() {
-    // 使用 wx.createContext 获取绘图上下文 context
-    var ctx = wx.createCanvasContext('canvasProgressbg')
-    ctx.setLineWidth(6); // 设置圆环的宽度
-    ctx.setStrokeStyle('#e9e9e9'); // 设置圆环的颜色
-    ctx.setLineCap('round') // 设置圆环端点的形状
-    ctx.beginPath(); //开始一个新的路径
-    ctx.arc(40, 40, 30, 0, 2 * Math.PI, false);
-    //设置一个原点(110,110)，半径为100的圆的路径到当前路径
-    ctx.stroke(); //对当前路径进行描边
-    ctx.draw();
-  },
-  drawCircle: function(step) {
-    var context = wx.createCanvasContext('canvasProgress');
-    // 设置渐变
-    // var gradient = context.createLinearGradient(200, 100, 100, 200);
-    // gradient.addColorStop("0", "#2661DD");
-    // gradient.addColorStop("0.5", "#40ED94");
-    // gradient.addColorStop("1.0", "#5956CC");
-    context.setStrokeStyle('#217dde'); // 设置圆环的颜色
 
-    context.setLineWidth(8);
-    // context.setStrokeStyle(gradient);
-    context.setLineCap('round')
-    context.beginPath();
-    // 参数step 为绘制的圆环周长，从0到2为一周 。 -Math.PI / 2 将起始角设在12点钟位置 ，结束角 通过改变 step 的值确定
-    context.arc(40, 40, 30, -Math.PI / 2, step * Math.PI - Math.PI / 2, false);
-    context.stroke();
-    context.draw()
-  },
+  onItemClick: function(event) {
+    // bindtap传值方式,通过data-*的方式传递参数,然后从相应函数的参数event中获取对应的值
+    console.log(event);
+    console.log(event.currentTarget.dataset.url);
+
+    wx.navigateTo({
+      url: event.currentTarget.dataset.url,
+    })
+  }
 
 })

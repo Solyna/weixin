@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/message/message",
     "pages/index/index",
+    "pages/message/message",
     "pages/my/my",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -9,7 +9,8 @@
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/progress/progress"
   ],
   "window": {
     "backgroundColor": "#F4f4f8",
@@ -19,30 +20,27 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "selectedColor": "#4e8cee",
+    "color": "#333",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "selectedColor": "#217DDE",
+        "selectedColor": "#4e8cee",
         "iconPath": "images/home.png",
-        "selectedIconPath": "images/activeHome.png",
-        "color": "#333"
+        "selectedIconPath": "images/activeHome.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "selectedColor": "#217DDE",
         "iconPath": "images/message.png",
-        "selectedIconPath": "images/ac-message.png",
-        "color": "#333"
+        "selectedIconPath": "images/ac-message.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "selectedColor": "#217DDE",
         "iconPath": "images/my.png",
-        "selectedIconPath": "images/ac-my.png",
-        "color": "#333"
+        "selectedIconPath": "images/ac-my.png"
       }
     ]
   }

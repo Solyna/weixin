@@ -1,0 +1,44 @@
+/* miniprogram/pages/progress/progress.wxss */
+
+/* 进度条 */
+
+.progress_box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.progress_canvas {
+  width: 80px;
+  height: 80px;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_info {
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  color: #217dde;
+}
+
+.progress_dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #fb9126;
+}
