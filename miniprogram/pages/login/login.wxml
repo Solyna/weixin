@@ -1,0 +1,21 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class='container'>
+  <view class='content'>
+
+    <!-- 手机号 -->
+    <view class='inputView'>
+      <input class='inputText' placeholder='请输入用户名' bindinput='phoneInput' />
+    </view>
+
+    <!-- 密码 -->
+    <view class='inputView'>
+      <input class='inputText' placeholder='请输入密码' bindinput='passwordInput' />
+    </view>
+
+    <!-- 登录按钮 -->
+    <view class='loginBtnView' bindtap='loginBtnClick'>
+      <text class='loginBtn'>登录</text>
+    </view>
+  </view>
+  <text class='lcb-tip'>乐车邦旗下商户服务平台</text>
+</view>

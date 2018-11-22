@@ -1,0 +1,63 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class='msg-container'>
+
+  <!-- 售后部 -->
+  <view class='sh-container'>
+    <view class='sh-container-child'>
+      <view class='sh-title'>
+        售后部
+        <i class="iconfont shezhi"></i>
+      </view>
+      <view class='sh-content'>
+        <view class='sh-content-item'>
+          <text class='sh-content-num'>1</text>
+          <text class='sh-content-text'>店铺排名</text>
+        </view>
+        <view class='sh-content-item'>
+          <text class='sh-content-num'>2301</text>
+          <text class='sh-content-text'>完成订单</text>
+        </view>
+        <view class='sh-content-item'>
+          <text class='sh-content-num'>98%</text>
+          <text class='sh-content-text'>好评率</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 新车销售个人任务 -->
+  <view class='task-container'>
+    <view class='task-container-child'>
+      <view class='task-title'>
+        新车销售部个人任务
+        <i class="iconfont shezhi"></i>
+      </view>
+      <view class='task-content'>
+
+        <view class='task-content-item' wx:for="{{taskList}}" wx:key="id">
+          <view class='container'>
+            <view class='progress_box'>
+              <canvas class="progress_bg" canvas-id="{{item.progressbg}}"> </canvas>
+              <canvas class="progress_canvas" canvas-id="{{item.progress}}"> </canvas>
+              <view class="progress_text">
+                <text class='progress_info'> {{item.progress_txt}}</text>
+              </view>
+            </view>
+          </view>
+          <text class='task-content-text'>{{item.title}}</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <!-- 九宫格列表 -->
+  <view class='grid-container'>
+    <view class='grid-item' wx:for="{{gridList}}" wx:key="id">
+      <view class='icon-content' style='background-color: {{item.bgColor}};'>
+        <i class="iconfont {{item.icon}} grid-content-icon"></i>
+      </view>
+      <text class='grid-content-text'>{{ item.name }}</text>
+    </view>
+  </view>
+</view>

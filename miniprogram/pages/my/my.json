@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-component": "/pages/components/my-component"
+  },
+  "navigationBarTitleText": "我的"
+}

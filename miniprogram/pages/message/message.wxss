@@ -1,0 +1,118 @@
+/* miniprogram/pages/message/message.wxss */
+
+page {
+  background-color: #f4f4f8;
+}
+
+.msg-nav {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2rpx solid #e9e9e9;
+}
+
+.msg-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-nav-text {
+  font-size: 30rpx;
+  color: #217dde;
+  margin-top: 14rpx;
+}
+
+.msg-icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #217dde;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.msg-nav-icon {
+  color: white;
+  font-size: 46rpx;
+}
+
+.msg-list-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* border: 2rpx solid red */
+}
+
+/* 进度条 */
+
+.progress_box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.progress_canvas {
+  width: 80px;
+  height: 80px;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_info {
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  color: #217dde;
+}
+
+.progress_dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #fb9126;
+}
+
+.list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  margin-top: 30rpx;
+  padding: 20rpx 0 20rpx 30rpx;
+}
+.list-title{
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.list-item{
+  height: 80rpx;
+  border-top: 2rpx solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
